@@ -1,1 +1,0 @@
-const valor = 10
