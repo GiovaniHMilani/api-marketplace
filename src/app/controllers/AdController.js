@@ -61,7 +61,7 @@ class AdController {
   async destroy(req, res) {
     /* Utiliza o metodo findByIdAndDelete do mongoose para procurar um registro 
     e deletalo */
-    await Ad.findByIdAndDelete(req.params.id)
+    await Ad.findByIdAndRemove(req.params.id)
 
     return res.send()
   }
